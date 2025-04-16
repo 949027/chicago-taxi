@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: chicago_taxi
+    description: "датасет с поездками чикагского такси"
+    database: bigquery-public-data
+    schema: chicago_taxi_trips
+    tables:
+      - name: trips
+        meta:
+          location: US
+
+  

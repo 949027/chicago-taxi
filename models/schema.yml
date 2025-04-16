@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_chicago_taxi_trips
+    description: view с ежемесячной суммой чаевых по машинам такси
+    columns:
+      - name: taxi_id
+        description: "ID автомобиля такси"
+      - name: year_month
+        description: "год и месяц поездок"
+      - name: tips_sum
+        description: "сумма чаевых"  
+  - name: top_taxi_tips_monthly
+    description: таблица изменений ежемесячных чаевых у машин такси получивших наибольшее количество чаевых в апреле 2018 года
+    columns:
+      - name: taxi_id
+        description: "ID автомобиля такси"
+      - name: year_month
+        description: "год и месяц поездок"
+      - name: tips_sum
+        description: "сумма чаевых"
+      - name: tips_change
+        description: "изменение чаевых по отношению к прошлому месяцу"
+
+
+
+  
