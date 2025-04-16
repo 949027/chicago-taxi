@@ -1,6 +1,7 @@
 {{
   config(
-    materialized='table',
+    materialized='incremental',
+    incremental_strategy='merge',
     unique_key = ['taxi_id', 'year_month']
   )
 }}
